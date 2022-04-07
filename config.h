@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayonleft = 0;   	/* 0: systray in the right corner, >0: systray on left of status text */
@@ -13,7 +13,7 @@ static const int topbar             = 0;     /* 0 means bottom bar */
 static const char *fonts[]          = { "Liberation Mono:size=9" };
 static const char dmenufont[]       = "Liberation Mono:size=9";
 static char normbgcolor[]           = "#000000";
-static char normbordercolor[]       = "#444444";
+static char normbordercolor[]       = "#000000";
 static char normfgcolor[]           = "#eeeeee";
 static char selfgcolor[]            = "#eeeeee";
 static char selbordercolor[]        = "#770000";

@@ -12,9 +12,9 @@ static const int showbar            = 1;     /* 0 means no bar */
 static const int topbar             = 0;     /* 0 means bottom bar */
 static const char *fonts[]          = { "Liberation Mono:size=9" };
 static const char dmenufont[]       = "Liberation Mono:size=9";
-static char normbgcolor[]           = "#eeeeee";
+static char normbgcolor[]           = "#000000";
 static char normbordercolor[]       = "#444444";
-static char normfgcolor[]           = "#002b36";
+static char normfgcolor[]           = "#eeeeee";
 static char selfgcolor[]            = "#eeeeee";
 static char selbordercolor[]        = "#770000";
 static char selbgcolor[]            = "#002b36";
@@ -24,7 +24,7 @@ static char *colors[][3] = {
        [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
 };
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "1", "2", "3", "4", "5"};
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -71,6 +71,9 @@ static Key keys[] = {
 
 	{ MODKEY,                       XK_b,      spawn,          SHCMD("qutebrowser") },
 	{ MODKEY|ShiftMask,             XK_B,      spawn,          SHCMD("qutebrowser --target private_window") },
+	{ MODKEY,                       XK_F2,     spawn,          SHCMD("amixer -q set Master 5%- unmute") },
+	{ MODKEY,                       XK_F3,     spawn,          SHCMD("amixer -q set Master 5%+ unmute") },
+	{ MODKEY,                       XK_F4,     spawn,          SHCMD("amixer -q set Master toggle") },
 	
 	{ MODKEY,                       XK_h,   focusdir,       {.i = 0 } }, // left
 	{ MODKEY,                       XK_l,  focusdir,       {.i = 1 } }, // right

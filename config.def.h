@@ -70,7 +70,7 @@ static Key keys[] = {
 	/* modifier                     key        function        argument */
 
 	{ MODKEY,                       XK_b,      spawn,          SHCMD("qutebrowser") },
-	{ MODKEY|ShiftMask,             XK_B,      spawn,          SHCMD("qutebrowser --target private_window") },
+	{ MODKEY|ShiftMask,             XK_B,      spawn,          SHCMD("qutebrowser --target private-window") },
 	{ MODKEY,                       XK_F2,     spawn,          SHCMD("amixer -q set Master 5%- unmute") },
 	{ MODKEY,                       XK_F3,     spawn,          SHCMD("amixer -q set Master 5%+ unmute") },
 	{ MODKEY,                       XK_F4,     spawn,          SHCMD("amixer -q set Master toggle") },

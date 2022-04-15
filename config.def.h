@@ -75,10 +75,10 @@ static Key keys[] = {
 	{ MODKEY,                       XK_F3,     spawn,          SHCMD("amixer -q set Master 5%+ unmute") },
 	{ MODKEY,                       XK_F4,     spawn,          SHCMD("amixer -q set Master toggle") },
 	
-	{ MODKEY,                       XK_h,   focusdir,       {.i = 0 } }, // left
-	{ MODKEY,                       XK_l,  focusdir,       {.i = 1 } }, // right
-	{ MODKEY,                       XK_k,     focusdir,       {.i = 2 } }, // up
-	{ MODKEY,                       XK_j,   focusdir,       {.i = 3 } }, // down
+	{ MODKEY,                       XK_h,      focusdir,       {.i = 0 } }, // left
+	{ MODKEY,                       XK_l,      focusdir,       {.i = 1 } }, // right
+	{ MODKEY,                       XK_k,      focusdir,       {.i = 2 } }, // up
+	{ MODKEY,                       XK_j,      focusdir,       {.i = 3 } }, // down
 
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
